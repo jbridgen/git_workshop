@@ -27,7 +27,7 @@ options(scipen = 999)
 
 plot(time_ints/7, output_sim$s_trace ,type = "l", main = "Simple SEIR model", 
      ylab = "population", xlab = "weeks", col = "dodgerblue", lwd =3 )
-lines(time_ints/7, output_sim$e_trace ,type = "l", col ="purple",lwd =3)
+lines(time_ints/7, output_sim$e_trace ,type = "l", col ="dimgrey",lwd =3)
 lines(time_ints/7, output_sim$i_trace ,type = "l", col ="green4",lwd =3)
 lines(time_ints/7, output_sim$r_trace ,type = "l", col ="darkorange",lwd =3)
 legend(8, 60000, legend = c("Susceptible", "Exposed", "Infected", "Recovered"), 
