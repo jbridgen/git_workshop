@@ -5,7 +5,7 @@ source("seir_demo_func.r")
 
 #model parameters
 N <- 100000
-R0 <- 3 #basic reproduction number
+R0 <- 5 #basic reproduction number
 
 dt <- 1 # output time increment in days
 time_ints <- seq(0, 84, 7) #time intervals
