@@ -1,2 +1,2 @@
 # workshop_test
- test repo
+simple seir model
