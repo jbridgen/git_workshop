@@ -1,6 +1,6 @@
 library(deSolve)
 library(tidyverse)
-
+source("stoch_v1_func.r")
 source("seir_demo_func.r")
 
 #model parameters
@@ -22,7 +22,7 @@ parms_init <- c(s_init = NA, e_init =0, i_init = 15, r_init =0 )
 parms_init[["s_init"]] <- parms[["popsize"]] - parms_init[["i_init"]]
 
 output_sim <- run_sim(dt,parms,parms_init,time_ints)
-
+output_stoch <- run.stoch.model(parms, parms_init, 100, 1)
 options(scipen = 999)
 
 plot(time_ints/7, output_sim$s_trace ,type = "l", main = "Simple SEIR model", 
