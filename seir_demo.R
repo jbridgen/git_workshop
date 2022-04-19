@@ -4,7 +4,7 @@ library(tidyverse)
 source("seir_demo_func.r")
 
 #model parameters
-N <- 100000
+N <- 100001
 R0 <- 5 #basic reproduction number
 
 dt <- 1 # output time increment in days
