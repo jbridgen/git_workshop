@@ -10,7 +10,7 @@ R0 <- 5 #basic reproduction number
 dt <- 1 # output time increment in days
 time_ints <- seq(0, 84, 7) #time intervals
 
-parms <- c(gamma = 1/5, #recovery rate
+parms <- c(gamma = 1/10, #recovery rate
            beta = NA,   #transmission rate
            alpha = 1/3, #incubation transition rate
            popsize = N) #
